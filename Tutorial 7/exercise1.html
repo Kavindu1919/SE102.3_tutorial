@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial 07 JS</title>
+</head>
+<body>
+
+<h2>Click the button to display a pop-up message box</h2>
+
+<button id="PopupButton">Click ME</button>
+<script>
+    function displayPopup() {
+        alert("This is a Alert !");
+    }
+    const button = document.getElementById('PopupButton');
+    button.addEventListener('click', displayPopup);
+</script>    
+</body>
+</html>

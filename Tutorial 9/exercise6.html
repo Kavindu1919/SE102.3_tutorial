@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Click the "Google" button</h2>
+
+<button id="googleButton" onclick="redirectToGoogle()">Google</button>
+
+<script>
+    function redirectToGoogle() {
+        const isConfirmed = confirm("Are you sure you want to go to Google?");
+
+        if (isConfirmed) {
+            window.location.href = "https://www.google.com";
+        } else {
+            alert("You decided to stay.");
+        }
+    }
+</script>
+</body>
+</html>

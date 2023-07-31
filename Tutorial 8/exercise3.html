@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial 8 JS</title>
+</head>
+<body>
+
+<h1>Move the mouse pointer over the buttons</h1>
+
+<button id="redButton" onmouseover="changeColor('red')" onmouseout="resetColor('red')">Red</button>
+<button id="greenButton" onmouseover="changeColor('green')" onmouseout="resetColor('green')">Green</button>
+<button id="blueButton" onmouseover="changeColor('blue')" onmouseout="resetColor('blue')">Blue</button>
+
+<script>
+    function changeColor(color) {
+        document.getElementById(color + 'Button').style.backgroundColor = color;
+    }
+
+    function resetColor(color) {
+        document.getElementById(color + 'Button').style.backgroundColor = '';
+    }
+</script>
+</body>
+</html>

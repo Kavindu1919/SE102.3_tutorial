@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial 10 JS</title>
+</head>
+<body>
+
+<h2>Maths Arithmetic Operations</h2>
+
+<button onclick="performMathOperations()">Perform Math Operations</button>
+
+<script>
+    function performMathOperations() {
+        const num1 = parseFloat(prompt("Enter the first number:"));
+        if (isNaN(num1))
+         {
+            alert("Invalid. Please enter a valid number.");
+            return;
+        }
+        const operator = prompt("Enter the operator (+, -, *, /):");
+
+        if (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/')
+         {
+            alert("Invalid. Please enter a valid operator (+, -, *, /).");
+            return;
+        }
+        const num2 = parseFloat(prompt("Enter the second number:"));
+        if (isNaN(num2)) 
+        {
+            alert("Invalid . Please enter a valid number.");
+            return;
+        }
+        let result;
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+        }
+        alert(`The result of ${num1} ${operator} ${num2} is: ${result}`);
+    }
+</script>
+</body>
+</html>

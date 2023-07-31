@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial 10 JS</title>
+</head>
+<body>
+
+<h1>Enter Student's NIC Number:</h1>
+<input type="text" id="nicNumber">
+<button onclick="extractYearOfBirth()">Extract Year of Birth</button>
+
+<script>
+    function extractYearOfBirth() {
+        const nicNumber = document.getElementById('nicNumber').value;
+        const yearOfBirth = nicNumber.substr(0,2);
+
+        alert("Year of Birth: " + yearOfBirth);
+    }
+</script>
+</body>
+</html>

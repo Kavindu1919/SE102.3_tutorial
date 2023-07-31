@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial 08 JS</title>
+</head>
+<body>
+
+<h2>CALCULATE AREA OF THE CIRCLE</h2>
+
+<button onclick="calculateArea()">Calculate AREA</button>
+
+<script>
+    function calculateArea() 
+    {
+        const radius = parseFloat(prompt("Enter the radius of the circle:"));
+
+        if (isNaN(radius) || radius <= 0)
+         {
+            alert("Invalid input. Please enter a valid number.");
+
+            return;
+        }
+        const pi = 22 / 7;
+        const area = pi * radius * radius;
+
+        alert("Area of the circle with radius " + radius + " is: " + area.toFixed(2));
+    }
+</script>
+</body>
+</html>
